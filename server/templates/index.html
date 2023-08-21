@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>업다운 미니플젝</header>
+      <div class="container">
+        <input class="inputVal" type="number" disabled />
+        <div class="hint">업다운 힌트</div>
+        <div>현재 카운트 : <span class="curCnt">0</span></div>
+        <div>최고 카운트 : <span class="maxCnt">0</span></div>
+        <button class="startBtn">게임 시작</button>
+        <button class="restartBtn">재시작</button>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='upDown.js') }}"></script>
+  </body>
+</html>
